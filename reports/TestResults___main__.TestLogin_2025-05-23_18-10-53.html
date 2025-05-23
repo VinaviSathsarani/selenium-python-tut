@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Unittest Results</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <h2 class="text-capitalize">Unittest Results</h2>
+                <p class='attribute'><strong>Start Time: </strong>2025-05-23 18:10:53</p>
+                <p class='attribute'><strong>Duration: </strong>292 ms</p>
+                <p class='attribute'><strong>Summary: </strong>Total: 1, Pass: 0, Error: 1</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-10 col-md-10">
+                <table class='table table-hover table-responsive'>
+                    <thead>
+                        <tr>
+                            <th>__main__.TestLogin</th>
+                            <th>Status</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_login_from_csv</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">WebDriverException: Message: unknown error: net::ERR_INTERNET_DISCONNECTED
+  (Session info: chrome=136.0.7103.114)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7C393CF45+75717]
+	GetHandleVerifier [0x00007FF7C393CFA0+75808]
+	(No symbol) [0x00007FF7C3708F9A]
+	(No symbol) [0x00007FF7C37059F4]
+	(No symbol) [0x00007FF7C36F6789]
+	(No symbol) [0x00007FF7C36F84F8]
+	(No symbol) [0x00007FF7C36F6A96]
+	(No symbol) [0x00007FF7C36F6516]
+	(No symbol) [0x00007FF7C36F61DA]
+	(No symbol) [0x00007FF7C36F3E8A]
+	(No symbol) [0x00007FF7C36F465C]
+	(No symbol) [0x00007FF7C370CF3A]
+	(No symbol) [0x00007FF7C37B013E]
+	(No symbol) [0x00007FF7C378737A]
+	(No symbol) [0x00007FF7C37AF39C]
+	(No symbol) [0x00007FF7C3787153]
+	(No symbol) [0x00007FF7C3750421]
+	(No symbol) [0x00007FF7C37511B3]
+	GetHandleVerifier [0x00007FF7C3C3D71D+3223453]
+	GetHandleVerifier [0x00007FF7C3C37CC2+3200322]
+	GetHandleVerifier [0x00007FF7C3C55AF3+3322739]
+	GetHandleVerifier [0x00007FF7C3956A1A+180890]
+	GetHandleVerifier [0x00007FF7C395E11F+211359]
+	GetHandleVerifier [0x00007FF7C3945294+109332]
+	GetHandleVerifier [0x00007FF7C3945442+109762]
+	GetHandleVerifier [0x00007FF7C392BA59+4825]
+	BaseThreadInitThunk [0x00007FFBE95FE8D7+23]
+	RtlUserThreadStart [0x00007FFBEA87C5DC+44]
+</p><p style="color:maroon;">Traceback (most recent call last):
+  File "d:\SeleniumPython\DDTLogin\test_login.py", line 36, in setUp
+    self.driver.get(self.url)
+  File "C:\Users\VinaviSathsarani\AppData\Roaming\Python\Python312\site-packages\selenium\webdriver\remote\webdriver.py", line 363, in get
+    self.execute(Command.GET, {"url": url})
+  File "C:\Users\VinaviSathsarani\AppData\Roaming\Python\Python312\site-packages\selenium\webdriver\remote\webdriver.py", line 354, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\VinaviSathsarani\AppData\Roaming\Python\Python312\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: unknown error: net::ERR_INTERNET_DISCONNECTED
+  (Session info: chrome=136.0.7103.114)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7C393CF45+75717]
+	GetHandleVerifier [0x00007FF7C393CFA0+75808]
+	(No symbol) [0x00007FF7C3708F9A]
+	(No symbol) [0x00007FF7C37059F4]
+	(No symbol) [0x00007FF7C36F6789]
+	(No symbol) [0x00007FF7C36F84F8]
+	(No symbol) [0x00007FF7C36F6A96]
+	(No symbol) [0x00007FF7C36F6516]
+	(No symbol) [0x00007FF7C36F61DA]
+	(No symbol) [0x00007FF7C36F3E8A]
+	(No symbol) [0x00007FF7C36F465C]
+	(No symbol) [0x00007FF7C370CF3A]
+	(No symbol) [0x00007FF7C37B013E]
+	(No symbol) [0x00007FF7C378737A]
+	(No symbol) [0x00007FF7C37AF39C]
+	(No symbol) [0x00007FF7C3787153]
+	(No symbol) [0x00007FF7C3750421]
+	(No symbol) [0x00007FF7C37511B3]
+	GetHandleVerifier [0x00007FF7C3C3D71D+3223453]
+	GetHandleVerifier [0x00007FF7C3C37CC2+3200322]
+	GetHandleVerifier [0x00007FF7C3C55AF3+3322739]
+	GetHandleVerifier [0x00007FF7C3956A1A+180890]
+	GetHandleVerifier [0x00007FF7C395E11F+211359]
+	GetHandleVerifier [0x00007FF7C3945294+109332]
+	GetHandleVerifier [0x00007FF7C3945442+109762]
+	GetHandleVerifier [0x00007FF7C392BA59+4825]
+	BaseThreadInitThunk [0x00007FFBE95FE8D7+23]
+	RtlUserThreadStart [0x00007FFBEA87C5DC+44]
+
+</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                Total: 1, Pass: 0, Error: 1 -- Duration: 292 ms
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('td').on('click', '.btn', function(e){
+                e.preventDefault();
+                e.stopImmediatePropagation();
+                var $this = $(this);
+                var $nextRow = $this.closest('tr').next('tr');
+                $nextRow.slideToggle("fast");
+                $this.text(function(i, text){
+                    if (text === 'View') {
+                        return 'Hide';
+                    } else {
+                        return 'View';
+                    };
+                });
+            });
+        });
+    </script>
+</body>
+</html
